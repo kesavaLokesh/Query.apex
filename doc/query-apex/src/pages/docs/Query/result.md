@@ -162,7 +162,7 @@ List<AggregateResult> result =
 
 ## toQueryString
 
-Get an executable SOQL string that can be used in `Dateabase.query()`.
+Get an executable SOQL string that can be used in `Database.query()`.
 
 #### public String toQueryString()
 
@@ -172,7 +172,7 @@ Returns an executable SOQL string.
 String queryStr = new Query('Account').
     selectAllFields().
     run();
-List<Account> accounts = Datebase.query(queryStr);
+List<Account> accounts = Database.query(queryStr);
 ```
 
 </article>
